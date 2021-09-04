@@ -9,7 +9,7 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng build --prod --base-href https://mtiwari95.github.io/angular-latest/
+- ng build --prod --base-href https://mtiwari95.github.io/ci-example/
 deploy:
   provider: pages
   skip_cleanup: true
