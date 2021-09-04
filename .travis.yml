@@ -10,3 +10,10 @@ before_script:
   - npm install -g @angular/cli
 script:
 - ng build --prod --base-href https://mtiwari95.github.io/angular-latest/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/angular-latest
+  on:
+    branch: main
